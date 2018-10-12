@@ -67,7 +67,7 @@ function isNew(date, lastCheckTime) {
 function post2LINE() {
   firstcomment();
   for (var i in newFeeds) {
-    var subject = newFeeds[i][3]
+    var subject = newFeeds[i][3] + "\n";
     var body = newFeeds[i][0] + "\r\n" + newFeeds[i][1];
     request2LINE(subject, body);
   }
